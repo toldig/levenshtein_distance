@@ -1,0 +1,1 @@
+valgrind --leak-check=yes --track-origins=yes --show-leak-kinds=all -s ./bin/test_lev 
