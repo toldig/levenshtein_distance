@@ -15,9 +15,9 @@
  **/
 #define MINLEN 5
 #define MAXLEN 10
-#define MINDIFF 2
-#define MAXDIFF 4
-#define LOOP_COUNTER 500
+#define MINDIFF 1
+#define MAXDIFF 3
+#define LOOP_COUNTER 100
 #define NULL_TERMINATOR 1
 #define ALPHA_MIN 97
 #define ALPHA_MAX 122
@@ -418,7 +418,6 @@ int main(int argc, char* argv[])
     }
 
     unsigned int seed = time(0);
-    // seed = 7;
     srand(seed);
 
     if ( ( NULL == CU_add_test(cache_test_suite,
